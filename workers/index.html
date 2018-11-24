@@ -20,20 +20,21 @@
     <div class="container">
         <form action="javascipt/script.js">
             <div class="form-group">
-                <label>First name:</label>
-                <input type="text" id="firstName"><br></div>
-            <div class="form-group"> <label>Last name:</label>
-                <input type="text" id="lastName"><br></div>
-            <div class="form-group"> <label>Experience:</label>
-                <input type="text" id="experience"><br></div>
-            <div class="form-group"> <select id="education">
+                <p><label>First name:</label><br>
+                    <input type="text" id="firstName"></p>
+                <p><label>Last name:</label><br>
+                    <input type="text" id="lastName"></p>
+                <p><label>Experience:</label><br>
+                    <input type="text" id="experience"></p>
+                <select id="education">
                     <option value="university">Univeristy</option>
                     <option value="college">College</option>
                     <option value="highSchool">High school</option>
-                </select><br></div>
+                </select><br>
+            </div>
             <input type="button" value="Add worker" onclick="addWorker()" class="btn btn-success"><br><br>
             <input type="button" value="Show workers" onclick="showWorkers()" class="btn btn-success">
-            <input type="button" value="Show workers2" onclick="showWorkers2()" class="btn btn-success"><br><br>
+            <input type="button" value="Show workers2" onclick="showWorkers2()" class="btn btn-success">
             <input type="button" value="Show workers foreach" onclick="workers.forEach(showWorkersForEach)" class="btn btn-success">
     </div>
     </form>
