@@ -1,16 +1,3 @@
-// let ime = prompt('Unesite ime');
-// let prezime = prompt('Unesite prezime');
-// let radnoIskustvo = prompt('Koliko godina iskustva imate?');
-// let fakultet = confirm("Da li ste zavrsili fakultet?");
-// let visaSkola = confirm("Da li ste zavrsili visu skolu?");
-
-// document.write(`${ime} ${prezime}<br>`);
-
-// let osnovnaPlata = 500;
-
-// for(let i=0:i<radnoIskustvo;i++){
-
-// }
 var workers = [];
 
 function addWorker() {
@@ -45,7 +32,7 @@ function showWorkers() {
 }
 
 function showWorkersForEach(element, index) {
-    document.getElementById('worker').innerHTML += element.name + ' has ' + element.experience +
+    document.getElementById('worker').innerHTML +=  +element.name + ' has ' + element.experience +
         ' years of expirience and has finished ' + element.education + 'and has salary ' + element.salary + '.<br>';
 }
 
