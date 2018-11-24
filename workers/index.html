@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak plate</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="javascipt/script.js">
+            <div class="form-group">
+                <label>First name:</label>
+                <input type="text" id="firstName"><br></div>
+            <div class="form-group"> <label>Last name:</label>
+                <input type="text" id="lastName"><br></div>
+            <div class="form-group"> <label>Experience:</label>
+                <input type="text" id="experience"><br></div>
+            <div class="form-group"> <select id="education">
+                    <option value="university">Univeristy</option>
+                    <option value="college">College</option>
+                    <option value="highSchool">High school</option>
+                </select><br></div>
+            <input type="button" value="Add worker" onclick="addWorker()" class="btn btn-success"><br><br>
+            <input type="button" value="Show workers" onclick="showWorkers()" class="btn btn-success">
+            <input type="button" value="Show workers2" onclick="showWorkers2()" class="btn btn-success"><br><br>
+            <input type="button" value="Show workers foreach" onclick="workers.forEach(showWorkersForEach)" class="btn btn-success">
+    </div>
+    </form>
+    <div id="worker">
+    </div>
+    <script src="javascript/script.js"></script>
+    </div>
+</body>
+
+</html>
